@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./index.css";
+import { motion } from "framer-motion";
 
-function App() {
+export default function App() {
+  const handleClick = () => {
+    // Animate the box
+    const box = document.querySelector(".box");
+    box.classList.add("animate");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <motion.div
+        className="box"
+        onClick={handleClick}
+        animate={{
+          scale: [1, 3],
+        }}
+        transition={{
+          duration: 3,
+          ease: "easeInOut",
+          times: [0, 0.2, 0.5, 0.8, 1],
+        }}
+      ></motion.div>
     </div>
   );
 }
-
-export default App;
