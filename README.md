@@ -1,7 +1,7 @@
 Framer Motion Examples
 ======================
 
-![](name-of-giphy.gif)
+![](https://github.com/ajinsunny/framer-motion/blob/master/boxanimation1.gif)
 
 This repository contains example code using Framer Motion for creating smooth and engaging animations in React applications.
 
