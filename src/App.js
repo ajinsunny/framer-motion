@@ -1,6 +1,7 @@
 import "./index.css";
+import React from "react";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion/dist/framer-motion";
 
 export default function App() {
   const [scale, setScale] = useState(1);
