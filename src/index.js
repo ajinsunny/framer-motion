@@ -1,4 +1,4 @@
-import { StrictMode, useState, React } from "react";
+import React, { StrictMode, useState } from "react";
 import * as ReactDOMClient from "react-dom/client";
 import "./index.css";
 import App from "./App";

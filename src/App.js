@@ -18,7 +18,7 @@ export default function App() {
         onClick={handleClick}
         initial={{
           scaleX: 1,
-          scaleY: 0.5,
+          scaleY: 1,
         }}
         animate={{
           scaleX: scale,
@@ -26,7 +26,7 @@ export default function App() {
           transformOrigin: "top left",
         }}
         transition={{
-          duration: 3,
+          duration: 2,
           ease: "easeInOut",
           times: [0, 0.2, 0.5, 0.8, 1],
         }}
